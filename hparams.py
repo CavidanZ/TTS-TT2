@@ -31,10 +31,10 @@ def create_hparams(hparams_string=None, verbose=False):
         ################################
         # Data Parameters             #
         ################################
-        load_mel_from_disk=False,
-        training_files='filelists/ljs_audio_text_train_filelist.txt',
-        validation_files='filelists/ljs_audio_text_train_filelist.txt',
-        text_cleaners=['english_cleaners'],
+        load_mel_from_disk=True,
+        training_files='filelists/audiobook_train.txt',
+        validation_files='filelists/audiobook_test.txt',
+        text_cleaners=['transliteration_cleaners'],
 
         ################################
         # Audio Parameters             #
