@@ -32,8 +32,10 @@ def create_hparams(hparams_string=None, verbose=False):
         # Data Parameters             #
         ################################
         load_mel_from_disk=True,
-        training_files='filelists/audiobook_train.txt',
-        validation_files='filelists/audiobook_test.txt',
+        # training_files='filelists/audiobook_train.txt',
+        # validation_files='filelists/audiobook_test.txt',
+        training_files='/kaggle/working/Full.txt',
+        validation_files='/kaggle/working/Full.txt',
         text_cleaners=['transliteration_cleaners'],
 
         ################################
